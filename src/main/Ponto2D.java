@@ -4,15 +4,20 @@ package main;
 public class Ponto2D {
 	
 	//atributos
+	private int id;
+	
 	private double x;
 	private double y;
 	
+	private static int idCount = 0;
+	
 	//constructors
 	public Ponto2D(){
-		this.setX(0);
-		this.setY(0);
+		this(0, 0);
 	}
 	public Ponto2D(double x, double y) {
+		Ponto2D.idCount++;
+		id = idCount;
 		this.setX(x);
 		this.setY(y);
 	}
@@ -27,7 +32,8 @@ public class Ponto2D {
 	 }
 		
 	//getters
-	 
+	
+	int getId() {return this.id;}
 	double getX() {return this.x;}
 	double getY() {return this.y;}
 	
