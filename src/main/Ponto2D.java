@@ -42,5 +42,10 @@ public class Ponto2D {
 		return Math.sqrt(Math.pow(ponto.getX() - this.getX(), 2) + Math.pow(ponto.getY() - this.getY(), 2));
 	}
 	
+	@Override
+	public String toString() {
+		return "(" + this.getX() + ", " + this.getY() + ")";
+	}
+	
 	
 }

@@ -89,6 +89,13 @@ public class Reta {
 		return false;
 	}
 	
+	public String stringfyPontos() {
+		String pontosStr = "";
+		for(Ponto2D ponto : this.pontos) {
+			pontosStr += ponto.toString() + " ";
+		}
+		return pontosStr;
+	}
 	
 	
 	
